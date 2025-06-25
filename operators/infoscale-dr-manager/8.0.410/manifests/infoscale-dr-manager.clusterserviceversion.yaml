@@ -1442,7 +1442,7 @@ spec:
                       fieldPath: metadata.labels['control-plane']
                 - name: TLS_CIPHER_SUITES
                   value: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-                image: veritas/infoscale-dr-manager:8.0.410-rhel
+                image: r7515-159-v4.arctera.io:5000/veritas/infoscale-dr-manager:8.0.410-rhel
                 imagePullPolicy: IfNotPresent
                 livenessProbe:
                   httpGet:
@@ -1493,7 +1493,7 @@ spec:
                   valueFrom:
                     fieldRef:
                       fieldPath: metadata.labels['control-plane']
-                image: veritas/infoscale-dr-manager:8.0.410-rhel
+                image: r7515-159-v4.arctera.io:5000/veritas/infoscale-dr-manager:8.0.410-rhel
                 imagePullPolicy: IfNotPresent
                 name: pre-manager
                 resources: {}
